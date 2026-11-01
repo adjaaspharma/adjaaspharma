@@ -3,7 +3,17 @@
   "buildCommand": null,
   "outputDirectory": "dist",
   "rewrites": [
-    { "source": "/mission", "destination": "/mission.html" },
-    { "source": "/vision", "destination": "/vision.html" }
+    {
+      "source": "/mission",
+      "destination": "/mission.html"
+    },
+    {
+      "source": "/vision",
+      "destination": "/vision.html"
+    },
+    {
+      "source": "/admin",
+      "destination": "/admin.html"
+    }
   ]
 }
