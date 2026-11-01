@@ -1,5 +1,9 @@
 {
   "framework": null,
   "buildCommand": null,
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/mission", "destination": "/mission.html" },
+    { "source": "/vision", "destination": "/vision.html" }
+  ]
 }
