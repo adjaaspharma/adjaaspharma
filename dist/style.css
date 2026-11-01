@@ -10,3 +10,32 @@
 
 /* Mission and Vision standalone pages */
 .top{justify-content:flex-end}.content-page{max-width:1100px;margin:0 auto;padding:100px var(--page)}.content-page .page-intro{max-width:760px;font-size:17px;line-height:1.9;margin:28px 0 45px}.content-page .page-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.content-page .page-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:25px 28px}.content-page .page-card h3{font-size:20px;margin-bottom:13px}.content-page .page-card p{font-size:13px;line-height:1.9;margin:0}.page-banner{background:radial-gradient(ellipse at 85% 75%,#d7efeb,transparent 50%),linear-gradient(135deg,#fbfdfd,#eff8f6);padding:80px var(--page)}.page-banner .eyebrow{margin-bottom:20px}.page-banner h1{font-size:clamp(48px,6vw,78px)}.page-banner p{max-width:700px;margin-top:25px;font-size:16px}.page-footer-links{display:flex;gap:22px;flex-wrap:wrap;margin-top:45px}.page-footer-links a{color:var(--teal);font-size:13px;font-weight:600}@media(max-width:760px){.content-page{padding:65px 6%}.content-page .page-grid{grid-template-columns:1fr}.page-banner{padding:60px 6%}nav{gap:14px;flex-wrap:wrap}.top{justify-content:flex-end}}
+
+/* ADJAAS science-led hero: animated molecule instead of the hand image */
+.science-visual{height:630px;display:grid;place-items:center;overflow:visible}
+.science-glow{position:absolute;width:min(39vw,490px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#bde9e2 0%,#dff4f0 35%,#e8f6f3 56%,transparent 72%);filter:blur(2px);animation:glowPulse 6s ease-in-out infinite}
+.science-orbit{position:absolute;border:1px solid #159a9c35;border-radius:50%;left:50%;top:46%;transform:translate(-50%,-50%) rotate(-24deg);pointer-events:none}
+.orbit-one{width:430px;height:430px;animation:orbitTurn 22s linear infinite}
+.orbit-two{width:340px;height:480px;transform:translate(-50%,-50%) rotate(48deg);border-color:#173d6820;animation:orbitTurnReverse 27s linear infinite}
+.orbit-node{position:absolute;width:14px;height:14px;border-radius:50%;background:#fff;border:4px solid var(--teal);box-shadow:0 0 0 7px #159a9c16}
+.node-a{top:14%;left:16%}.node-b{right:9%;bottom:20%;width:10px;height:10px;border-width:3px}.node-c{right:17%;top:10%;background:#173d68;border-color:#fff;box-shadow:0 0 0 6px #173d6818}
+.science-core{position:relative;z-index:2;width:280px;height:280px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#ffffffed,#e6f7f3dd);border:1px solid #fff;box-shadow:0 28px 75px #173d6818,inset 0 0 45px #159a9c0b;animation:coreFloat 6s ease-in-out infinite}
+.molecule-art{width:76%;height:76%;color:#173d68;filter:drop-shadow(0 8px 8px #173d6810)}
+.floating-pill{position:absolute;z-index:3;width:100px;height:39px;border-radius:30px;background:#fff;box-shadow:0 15px 38px #173d681a;border:1px solid #ffffff;display:flex;overflow:hidden;transform:rotate(-32deg);animation:pillDrift 7s ease-in-out infinite}
+.floating-pill span,.floating-pill i{display:block;width:50%;height:100%}.floating-pill span{background:linear-gradient(135deg,#1da9a4,#0c858b)}.floating-pill i{background:linear-gradient(135deg,#fff,#e5edf3)}
+.pill-one{top:18%;right:13%;transform:rotate(-34deg) scale(.9)}.pill-two{bottom:24%;left:7%;transform:rotate(27deg) scale(.7);animation-delay:-3s}
+.science-chip{position:absolute;z-index:4;display:flex;gap:12px;align-items:center;padding:14px 17px;border:1px solid #ffffffdd;border-radius:13px;background:#ffffffdc;box-shadow:0 16px 45px #173d6810;backdrop-filter:blur(12px);animation:chipFloat 5.5s ease-in-out infinite}
+.science-chip strong,.science-chip small{display:block}.science-chip strong{font-size:11px;color:var(--navy);font-weight:600;line-height:1.5}.science-chip small{font-size:9px;color:var(--muted);line-height:1.5}.chip-icon{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:#e1f5f1;color:var(--teal);font-size:21px}
+.chip-quality{top:18%;left:0}.chip-care{right:0;bottom:24%;animation-delay:-2.5s}
+.science-visual .hero-caption{left:7%;bottom:7%;z-index:4}
+@keyframes orbitTurn{from{transform:translate(-50%,-50%) rotate(-24deg)}to{transform:translate(-50%,-50%) rotate(336deg)}}
+@keyframes orbitTurnReverse{from{transform:translate(-50%,-50%) rotate(48deg)}to{transform:translate(-50%,-50%) rotate(-312deg)}}
+@keyframes coreFloat{0%,100%{transform:translateY(7px)}50%{transform:translateY(-10px)}}
+@keyframes pillDrift{0%,100%{margin-top:0}50%{margin-top:-18px}}
+@keyframes chipFloat{0%,100%{translate:0 0}50%{translate:0 -8px}}
+@keyframes glowPulse{0%,100%{opacity:.65;scale:.96}50%{opacity:1;scale:1.04}}
+.motion-paused .science-visual *{animation-play-state:paused!important}
+@media(max-width:1000px){.science-visual{height:575px}.science-core{width:235px;height:235px}.orbit-one{width:350px;height:350px}.orbit-two{width:285px;height:410px}.science-chip{padding:11px 13px}.chip-quality{top:20%}.pill-one{right:8%}}
+@media(max-width:760px){.science-visual{height:500px}.science-core{width:215px;height:215px}.orbit-one{width:320px;height:320px}.orbit-two{width:255px;height:385px}.chip-quality{left:1%;top:14%}.chip-care{right:0;bottom:22%}.science-visual .hero-caption{left:3%;bottom:5%}.science-glow{width:370px}.pill-one{right:4%;top:16%}.pill-two{left:4%;bottom:25%}}
+@media(max-width:600px){.hero-photo.science-visual{height:390px;margin-top:18px;overflow:hidden}.science-core{width:190px;height:190px}.orbit-one{width:280px;height:280px}.orbit-two{width:230px;height:320px}.science-glow{width:320px}.science-chip{padding:9px 11px;gap:8px}.science-chip strong{font-size:10px}.science-chip small{font-size:8px}.chip-icon{width:28px;height:28px;font-size:17px}.chip-quality{top:10%;left:0}.chip-care{bottom:17%;right:0}.floating-pill{width:75px;height:30px}.pill-one{right:1%;top:13%}.pill-two{left:0;bottom:24%}.science-visual .hero-caption{left:0;bottom:2%;padding:10px 13px}.science-visual .motion-toggle{bottom:8px;right:4px}}
+@media(prefers-reduced-motion:reduce){.science-visual *{animation:none!important}}
