@@ -24,4 +24,7 @@ The site is static and has no installation or build step. Publish the `dist` dir
 - Mobile navigation, product dropdown and mission accordions
 - Click-to-call and email enquiries
 
-Company contact: adjaaspharmaceuticals@gmail.com · +91 8887208050.
+Company contact: sales@adjaaspharma.in · +91 8887208050.
+
+Registered office: PARSADI KHERA SADRAUNA, Manaknagar, Lucknow, Lucknow-226011, Uttar Pradesh.
+CIN: U21001UP2026PTC253552.
