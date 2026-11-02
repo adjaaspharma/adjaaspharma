@@ -4,6 +4,10 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
+      "source": "/products/:category",
+      "destination": "/product.html"
+    },
+    {
       "source": "/mission",
       "destination": "/mission.html"
     },
